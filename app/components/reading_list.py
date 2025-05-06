@@ -1,7 +1,7 @@
 # app/pages/reading_list.py
 import streamlit as st
-from api_client import api_get
-from state import set_selected_book
+from app.api_client import api_get
+from app.state import set_selected_book
 
 def reading_list_page():
     st.header('My Reading List')

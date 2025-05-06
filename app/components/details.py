@@ -1,7 +1,7 @@
 # app/pages/details.py
 import streamlit as st
-from api_client import api_get, api_post, api_put, api_delete
-from state import clear_details
+from app.api_client import api_get, api_post, api_put, api_delete
+from app.state import clear_details
 
 def details_page():
     bid = st.session_state['selected_book']
