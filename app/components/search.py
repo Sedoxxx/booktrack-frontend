@@ -1,8 +1,8 @@
 import streamlit as st
-from api_client import api_get
-from config import settings
-from components.book_card import render_book_card
-from state import set_selected_book
+from app.api_client import api_get
+from app.config import settings
+from app.components.book_card import render_book_card
+from app.state import set_selected_book
 
 def search_page():
     st.header('Discover Books')

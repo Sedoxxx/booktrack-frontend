@@ -1,9 +1,9 @@
 # app/api_client.py
 import requests
-from config import settings
+from app.config import settings
 
 if settings.USE_FAKE_DATA:
-    from fake_data import FAKE_BOOKS, FAKE_DETAILS, FAKE_FAV, FAKE_RL
+    from app.fake_data import FAKE_BOOKS, FAKE_DETAILS, FAKE_FAV, FAKE_RL
 
 def api_get(path: str, params: dict = None):
     if settings.USE_FAKE_DATA:
